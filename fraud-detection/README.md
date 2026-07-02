@@ -1,4 +1,4 @@
-# 🔍 Financial Fraud Detection System
+#  Financial Fraud Detection System
 ### End-to-End ML Pipeline · Executive Dashboard · SHAP Explainability
 
 ![Python](https://img.shields.io/badge/Python-3.10+-blue?logo=python&logoColor=white)
@@ -9,7 +9,7 @@
 
 ---
 
-## 📌 Overview
+##  Overview
 
 Built an end-to-end fraud detection pipeline on **50,000 financial transactions**, achieving **97%+ AUC-ROC** with XGBoost. The system includes feature engineering with domain expertise, SHAP explainability for regulatory compliance, and an executive-level SQL + Power BI reporting layer.
 
@@ -17,7 +17,7 @@ This project simulates a real-world production pipeline that a fintech, bank, or
 
 ---
 
-## 💡 Business Problem
+##  Business Problem
 
 Financial fraud costs UK businesses over **£1.2 billion annually** (Action Fraud, 2024). Traditional rule-based systems flag too many false positives, creating friction for legitimate customers. This project builds a smarter, explainable ML system that:
 
@@ -31,17 +31,16 @@ Financial fraud costs UK businesses over **£1.2 billion annually** (Action Frau
 ## 🔑 Key Findings
 
 | Finding | Detail |
-|---|---|
-| 🌙 **Night-time risk** | Transactions 11PM–3AM are **4.5× more likely** to be fraudulent |
-| 🌍 **Geography matters** | High-risk countries show **6× baseline fraud rate** |
-| ⚡ **Velocity signal** | >5 transactions in 24h increases fraud probability **3.5×** |
-| 👤 **New customers** | Accounts < 30 days old carry **4× higher risk** |
-| 💰 **Amount threshold** | Transactions > £1,500 show **3× higher fraud rate** |
-| 🏆 **Best predictor** | `risk_score` composite feature (SHAP #1 feature) |
+|  **Night-time risk** | Transactions 11PM–3AM are **4.5× more likely** to be fraudulent |
+|  **Geography matters** | High-risk countries show **6× baseline fraud rate** |
+|  **Velocity signal** | >5 transactions in 24h increases fraud probability **3.5×** |
+|  **New customers** | Accounts < 30 days old carry **4× higher risk** |
+|  **Amount threshold** | Transactions > £1,500 show **3× higher fraud rate** |
+|  **Best predictor** | `risk_score` composite feature (SHAP #1 feature) |
 
 ---
 
-## 📊 Results
+##  Results
 
 ### Model Performance
 
@@ -54,25 +53,23 @@ Financial fraud costs UK businesses over **£1.2 billion annually** (Action Frau
 
 ### Business Impact (Test Set — 10,000 transactions)
 
-```
-✅ Fraud transactions caught (True Positives):   ~380
-❌ Fraud transactions missed (False Negatives):  ~50
-⚠️  Legitimate flagged for review (FP):          ~200
+ Fraud transactions caught (True Positives):   ~380
+ Fraud transactions missed (False Negatives):  ~50
+ Legitimate flagged for review (FP):          ~200
 
-💰 Total fraud value caught:          ~£95,000
-📋 Cost of manual review (FPs):       -£3,000
-💸 Cost of missed fraud:              -£12,500
-─────────────────────────────────────────────
-🏆 NET VALUE ADDED BY MODEL:          ~£79,500
+Total fraud value caught:          ~£95,000
+ Cost of manual review (FPs):       -£3,000
+ Cost of missed fraud:              -£12,500
+────────────────────────────────────────────
+ NET VALUE ADDED BY MODEL:          ~£79,500
    (per 10,000 transactions processed)
 ```
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 | Category | Tools |
-|---|---|
 | Data Processing | `pandas`, `numpy` |
 | Machine Learning | `scikit-learn`, `xgboost`, `imbalanced-learn` (SMOTE) |
 | Explainability | `shap` |
@@ -82,7 +79,7 @@ Financial fraud costs UK businesses over **£1.2 billion annually** (Action Frau
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 fraud-detection/
@@ -107,7 +104,7 @@ fraud-detection/
 
 ---
 
-## 🚀 How to Run
+## How to Run
 
 ```bash
 # 1. Clone the repository
@@ -128,7 +125,7 @@ jupyter notebook notebooks/03_modeling.ipynb
 
 ---
 
-## 📈 Visualisations
+##  Visualisations
 
 > *(Add screenshots of your figures here after running the notebooks)*
 
@@ -142,7 +139,7 @@ jupyter notebook notebooks/03_modeling.ipynb
 
 ---
 
-## 🧠 Methodology Notes
+##  Methodology Notes
 
 **Why not accuracy as a metric?**
 With ~4% fraud rate, a model predicting "never fraud" achieves 96% accuracy — useless. We use AUC-ROC (overall discrimination) and Average Precision (focus on fraud class) instead.
@@ -155,7 +152,7 @@ Gradient boosting models are powerful but opaque. Financial regulators (FCA in U
 
 ---
 
-## 🔮 Next Steps / Future Work
+##  Next Steps / Future Work
 
 - [ ] Deploy model as REST API with FastAPI
 - [ ] Add real-time scoring with streaming data (Kafka simulation)
@@ -165,7 +162,7 @@ Gradient boosting models are powerful but opaque. Financial regulators (FCA in U
 
 ---
 
-## 📄 License
+##  License
 
 MIT License — free to use, modify and distribute with attribution.
 
@@ -173,6 +170,6 @@ MIT License — free to use, modify and distribute with attribution.
 
 ## 👤 Author
 
-**Your Name** · [LinkedIn](https://linkedin.com/in/yourprofile) · [GitHub](https://github.com/yourusername)
+**Pedro Paniagua Goitia** · [LinkedIn](https://www.linkedin.com/in/pedro-paniagua-goitia-a899b9218/?locale=en) · [GitHub](https://github.com/kmaxogg)
 
 *Open to Data Analyst / Data Scientist roles in UK and Spain.*
