@@ -28,7 +28,7 @@ Financial fraud costs UK businesses over **£1.2 billion annually** (Action Frau
 
 ---
 
-## 🔑 Key Findings
+##  Key Findings
 
 | Finding | Detail |
 |  **Night-time risk** | Transactions 11PM–3AM are **4.5× more likely** to be fraudulent |
